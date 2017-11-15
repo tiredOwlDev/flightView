@@ -1,0 +1,39 @@
+﻿<Window x:Class="flightView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:flightView"
+        mc:Ignorable="d"
+        Title="Flight View" Height="350" Width="940">
+    <Grid Background="Green">
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="300" Height="300">
+            <Rectangle HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#0099cc"/>
+            <Rectangle HorizontalAlignment="Left" Height="200" Margin="145,50,0,0" VerticalAlignment="Top" Width="10" Fill="#0099cc"/>
+            <Ellipse x:Name="JoystickPos0" HorizontalAlignment="Left" Height="50" Margin="125,125,0,0" VerticalAlignment="Top" Width="50" Fill="#80e5ff" />
+            <Rectangle x:Name="JoystickVec0" HorizontalAlignment="Left" Height="50" Margin="145,125,0,0" VerticalAlignment="Top" Width="10" Fill="Black"  RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <RotateTransform />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="620,10,0,0" Width="300" Height="300">
+            <Rectangle HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#0099cc"/>
+            <Rectangle HorizontalAlignment="Left" Height="200" Margin="145,50,0,0" VerticalAlignment="Top" Width="10" Fill="#0099cc"/>
+            <Ellipse x:Name="JoystickPos1" HorizontalAlignment="Left" Height="50" Margin="125,125,0,0" VerticalAlignment="Top" Width="50" Fill="#80e5ff" />
+            <Rectangle x:Name="JoystickVec1" HorizontalAlignment="Left" Height="50" Margin="145,125,0,0" VerticalAlignment="Top" Width="10" Fill="black"  RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <RotateTransform />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,10,0,0" Width="300" Height="300">
+            <Ellipse x:Name="JoystickPos2" HorizontalAlignment="Left" Height="50" Margin="125,125,0,0" VerticalAlignment="Top" Width="50" Fill="#80e5ff" Visibility="Hidden" />
+            <Rectangle x:Name="JoystickVec2" HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#80e5ff" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <RotateTransform />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Canvas>
+    </Grid>
+</Window>
