@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flightView", "flightView2\flightView.csproj", "{53F6B173-7E07-4DD6-847F-EF9A2CF0F794}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flightView", "flightView\flightView.csproj", "{53F6B173-7E07-4DD6-847F-EF9A2CF0F794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
