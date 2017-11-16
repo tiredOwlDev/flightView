@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:flightView"
         mc:Ignorable="d"
-        Title="Flight View" Height="350" Width="940">
-    <Grid Background="Green">
+        Title="Flight View" Height="350" Width="960" Name="FlightView" MouseDown="FlightView_MouseDown">
+    <Grid Background="Green" Name="Grid0">
         <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="300" Height="300">
             <Rectangle HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#0099cc"/>
             <Rectangle HorizontalAlignment="Left" Height="200" Margin="145,50,0,0" VerticalAlignment="Top" Width="10" Fill="#0099cc"/>
@@ -16,8 +16,64 @@
                     <RotateTransform />
                 </Rectangle.RenderTransform>
             </Rectangle>
+            <TextBox x:Name="TextBoxTop0"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="STRAFE FORWARD" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0"/>
+            <TextBox x:Name="TextBoxBottom0"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="STRAFE BACKWARD" 
+                     Canvas.Bottom="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0"/>
+            <TextBox x:Name="TextBoxLeft0"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="STRAFE LEFT" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0">
+                <TextBox.LayoutTransform>
+                    <RotateTransform Angle="-90"/>
+                </TextBox.LayoutTransform>
+            </TextBox>
+            <TextBox x:Name="TextBoxRight0"
+                     Height="35" 
+                     Canvas.Right="0" 
+                     TextWrapping="NoWrap" 
+                     Text="STRAFE RIGHT" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0">
+                <TextBox.LayoutTransform>
+                    <RotateTransform Angle="90"/>
+                </TextBox.LayoutTransform>
+            </TextBox>
         </Canvas>
-        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="620,10,0,0" Width="300" Height="300">
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630,10,0,0" Width="300" Height="300">
             <Rectangle HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#0099cc"/>
             <Rectangle HorizontalAlignment="Left" Height="200" Margin="145,50,0,0" VerticalAlignment="Top" Width="10" Fill="#0099cc"/>
             <Ellipse x:Name="JoystickPos1" HorizontalAlignment="Left" Height="50" Margin="125,125,0,0" VerticalAlignment="Top" Width="50" Fill="#80e5ff" />
@@ -26,14 +82,126 @@
                     <RotateTransform />
                 </Rectangle.RenderTransform>
             </Rectangle>
+            <TextBox x:Name="TextBoxTop1"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="PITCH DOWN" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0"/>
+            <TextBox x:Name="TextBoxBottom1"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="PITCH UP" 
+                     Canvas.Bottom="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0"/>
+            <TextBox x:Name="TextBoxLeft1"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="YAW LEFT" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0">
+                <TextBox.LayoutTransform>
+                    <RotateTransform Angle="-90"/>
+                </TextBox.LayoutTransform>
+            </TextBox>
+            <TextBox x:Name="TextBoxRight1"
+                     Height="35" 
+                     Canvas.Right="0" 
+                     TextWrapping="NoWrap" 
+                     Text="YAW RIGHT" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0">
+                <TextBox.LayoutTransform>
+                    <RotateTransform Angle="90"/>
+                </TextBox.LayoutTransform>
+            </TextBox>
         </Canvas>
-        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,10,0,0" Width="300" Height="300">
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,10,0,0" Width="300" Height="300">
             <Ellipse x:Name="JoystickPos2" HorizontalAlignment="Left" Height="50" Margin="125,125,0,0" VerticalAlignment="Top" Width="50" Fill="#80e5ff" Visibility="Hidden" />
             <Rectangle x:Name="JoystickVec2" HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#80e5ff" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <RotateTransform />
                 </Rectangle.RenderTransform>
             </Rectangle>
+            <TextBox x:Name="TextBoxTop2"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="ROLL" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0"/>
+            <TextBox x:Name="TextBoxBottom2"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="" 
+                     Canvas.Bottom="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0"/>
+            <TextBox x:Name="TextBoxLeft2"
+                     Height="35" 
+                     Canvas.Left="0" 
+                     TextWrapping="NoWrap" 
+                     Text="" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0">
+                <TextBox.LayoutTransform>
+                    <RotateTransform Angle="-90"/>
+                </TextBox.LayoutTransform>
+            </TextBox>
+            <TextBox x:Name="TextBoxRight2"
+                     Height="35" 
+                     Canvas.Right="0" 
+                     TextWrapping="NoWrap" 
+                     Text="" 
+                     Canvas.Top="0" 
+                     Width="300" 
+                     TextAlignment="Center"
+                     Background="Transparent"
+                     Foreground="#80e5ff"
+                     FontSize="20"
+                     BorderThickness="0">
+                <TextBox.LayoutTransform>
+                    <RotateTransform Angle="90"/>
+                </TextBox.LayoutTransform>
+            </TextBox>
         </Canvas>
     </Grid>
 </Window>

@@ -77,7 +77,6 @@ namespace flightView
                     rotateTransform.Angle = (_axisReadings[2] * 90 - 45) * (-1);
                 }
 
-
                 // Apply transformation
                 _joystickPos.Margin = new System.Windows.Thickness(_horizontalAxisMargin, _verticalAxisMargin, 0, 0);
                 if (i != 2)
@@ -89,6 +88,11 @@ namespace flightView
                 // Increase loop control
                 i++;
             }
+        }
+
+        private void FlightView_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Keyboard.ClearFocus();
         }
     }
 }
