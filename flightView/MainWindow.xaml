@@ -8,10 +8,10 @@
         Title="Flight View" Height="350" Width="960" Name="FlightView" MouseDown="FlightView_MouseDown">
     <Grid Background="Green" Name="Grid0">
         <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="300" Height="300">
-            <Rectangle HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#0099cc"/>
-            <Rectangle HorizontalAlignment="Left" Height="200" Margin="145,50,0,0" VerticalAlignment="Top" Width="10" Fill="#0099cc"/>
-            <Ellipse x:Name="JoystickPos0" HorizontalAlignment="Left" Height="50" Margin="125,125,0,0" VerticalAlignment="Top" Width="50" Fill="#80e5ff" />
-            <Rectangle x:Name="JoystickVec0" HorizontalAlignment="Left" Height="50" Margin="145,125,0,0" VerticalAlignment="Top" Width="10" Fill="Black"  RenderTransformOrigin="0.5,0.5">
+            <Rectangle HorizontalAlignment="Left" Height="6" Margin="50,147,0,0" VerticalAlignment="Top" Width="200" Fill="#0099cc"/>
+            <Rectangle HorizontalAlignment="Left" Height="200" Margin="147,50,0,0" VerticalAlignment="Top" Width="6" Fill="#0099cc"/>
+            <Ellipse x:Name="JoystickPos0" HorizontalAlignment="Left" Height="40" Margin="130,130,0,0" VerticalAlignment="Top" Width="40" Fill="#80e5ff" />
+            <Rectangle x:Name="JoystickVec0" HorizontalAlignment="Left" Height="40" Margin="147,130,0,0" VerticalAlignment="Top" Width="6" Fill="#0099cc"  RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <RotateTransform />
                 </Rectangle.RenderTransform>
@@ -25,7 +25,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0"/>
             <TextBox x:Name="TextBoxBottom0"
@@ -37,7 +37,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0"/>
             <TextBox x:Name="TextBoxLeft0"
@@ -49,7 +49,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0">
                 <TextBox.LayoutTransform>
@@ -65,7 +65,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0">
                 <TextBox.LayoutTransform>
@@ -74,10 +74,10 @@
             </TextBox>
         </Canvas>
         <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="630,10,0,0" Width="300" Height="300">
-            <Rectangle HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#0099cc"/>
-            <Rectangle HorizontalAlignment="Left" Height="200" Margin="145,50,0,0" VerticalAlignment="Top" Width="10" Fill="#0099cc"/>
-            <Ellipse x:Name="JoystickPos1" HorizontalAlignment="Left" Height="50" Margin="125,125,0,0" VerticalAlignment="Top" Width="50" Fill="#80e5ff" />
-            <Rectangle x:Name="JoystickVec1" HorizontalAlignment="Left" Height="50" Margin="145,125,0,0" VerticalAlignment="Top" Width="10" Fill="black"  RenderTransformOrigin="0.5,0.5">
+            <Rectangle HorizontalAlignment="Left" Height="6" Margin="50,147,0,0" VerticalAlignment="Top" Width="200" Fill="#0099cc"/>
+            <Rectangle HorizontalAlignment="Left" Height="200" Margin="147,50,0,0" VerticalAlignment="Top" Width="6" Fill="#0099cc"/>
+            <Ellipse x:Name="JoystickPos1" HorizontalAlignment="Left" Height="40" Margin="130,130,0,0" VerticalAlignment="Top" Width="40" Fill="#80e5ff" />
+            <Rectangle x:Name="JoystickVec1" HorizontalAlignment="Left" Height="40" Margin="147,130,0,0" VerticalAlignment="Top" Width="6" Fill="#0099cc"  RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <RotateTransform />
                 </Rectangle.RenderTransform>
@@ -91,7 +91,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0"/>
             <TextBox x:Name="TextBoxBottom1"
@@ -103,7 +103,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0"/>
             <TextBox x:Name="TextBoxLeft1"
@@ -115,7 +115,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0">
                 <TextBox.LayoutTransform>
@@ -131,7 +131,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0">
                 <TextBox.LayoutTransform>
@@ -141,7 +141,7 @@
         </Canvas>
         <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,10,0,0" Width="300" Height="300">
             <Ellipse x:Name="JoystickPos2" HorizontalAlignment="Left" Height="50" Margin="125,125,0,0" VerticalAlignment="Top" Width="50" Fill="#80e5ff" Visibility="Hidden" />
-            <Rectangle x:Name="JoystickVec2" HorizontalAlignment="Left" Height="10" Margin="50,145,0,0" VerticalAlignment="Top" Width="200" Fill="#80e5ff" RenderTransformOrigin="0.5,0.5">
+            <Rectangle x:Name="JoystickVec2" HorizontalAlignment="Left" Height="6" Margin="50,147,0,0" VerticalAlignment="Top" Width="200" Fill="#80e5ff" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <RotateTransform />
                 </Rectangle.RenderTransform>
@@ -155,7 +155,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0"/>
             <TextBox x:Name="TextBoxBottom2"
@@ -167,7 +167,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0"/>
             <TextBox x:Name="TextBoxLeft2"
@@ -179,7 +179,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0">
                 <TextBox.LayoutTransform>
@@ -195,7 +195,7 @@
                      Width="300" 
                      TextAlignment="Center"
                      Background="Transparent"
-                     Foreground="#80e5ff"
+                     Foreground="#0099cc"
                      FontSize="20"
                      BorderThickness="0">
                 <TextBox.LayoutTransform>
