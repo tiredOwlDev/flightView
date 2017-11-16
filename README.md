@@ -30,3 +30,7 @@ Currently the app has zero settings, but here a few of the major components I wi
 - [ ] Customize color scheme
 - [ ] Customize position
 - [ ] Ability to set controller to UI element
+
+## Download link
+
+https://drive.google.com/file/d/1WCtxdnllkeH_y4Fe2D3NsdV1moK4xe6m/view?usp=sharing
